@@ -8,9 +8,9 @@ h1 {
 h2 {
     /*font-size: 1.75em; Para chegar nesse resutlado projetamos o valor que queremos e dividimos pela referência (16px altura fonte padrão dos navegadores). conta 28/16px= 1,75*/
     background-color: #c0262c;
-    background-image: url(/MIDIA/back-bolinha.gif);
-    background-repeat: repeat;
-    background-position: center center;
+    background-image: url(/MIDIA/importante-saber.jpg), url(/MIDIA/back-bolinha.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: center right, center center;
     color: #ffffff;
     font-size: 2.5em;
     letter-spacing: .1em;
