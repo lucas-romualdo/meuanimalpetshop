@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boletim | Meu animal</title>
-</head>
-    <body>
-        <h1>Meu animal | Petshop</h1>
-        <h2>Boletim mensal</h2>
-        <h3>Assine já!</h3>
-        <p>Fazendo sua assinatura
-        você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</p>
-        <form method="post" id="boletim" action="obrigado.html">
-            <p><label for="none">Nome:</label><input type="text" name="nome" id="nome" placeholder="Digite seu nome"></p>
-            
-            <p><label for="email">E-mail:</label><input type="text" name="email" id="email" placeholder="Digite seu endereço de E-mail" size="30"></p>
+﻿<!doctype html>
 
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Boletim Mensal - Meu amigo cão</title>
+
+    </head>
+
+
+
+    <body>
+        <a href="/index.html">Home</a>
+        <h1>Meu amigo cão - Petshop</h1>
+
+        <h1>Boletim mensal</h1>
+
+        <h2>Assine já!</h2>
+
+        <p>Fazendo sua assinatura<br> 
+        você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</p>
+
+        <form action="/obrigado.html" method="post" id="boletim">
+            <p><label for="nome">Nome: </label><input type="text" name="nome" id="nome" placeholder="Digite o seu nome"></p>
+            <p><label for="email">E-mail: </label><input type="email" name="email" id="email" placeholder="Digite seu endereço de e-mail"></p>
             <input type="submit" value="Enviar">
         </form>
     </body>

@@ -1,21 +1,12 @@
-h1 {
+h1{
     color: #c0262c;
     font-size: 2.5em; /*40/16=2.5*/
     border-bottom: #c0262c solid thin;
     padding-bottom: 7px;
 }
 
-h2 {
-    /*font-size: 1.75em; Para chegar nesse resutlado projetamos o valor que queremos e dividimos pela referência (16px altura fonte padrão dos navegadores). conta 28/16px= 1,75*/
-    background-color: #c0262c;
-    background-image: url(/MIDIA/back-bolinha.gif);
-    background-repeat: repeat;
-    background-position: center center;
-    color: #ffffff;
-    font-size: 2.5em;
-    letter-spacing: .1em;
-    width: 470px;
-    padding: 61px 400px 61px 100px;
+h2{
+    font-size: 1.75em; /*28px(tamanho que desejo)/16px(referência)= 1.75*/
 }
 
 p{
@@ -24,104 +15,17 @@ p{
     text-align: justify;
 }
 
-p:first-line{
+p::first-line{
     font-size: 1.17em;
     font-variant: small-caps;
     font-weight: bolder;
     font-style: italic;
 }
 
-hr {
+hr{
     border-color: #c0262c;
 }
 
 body{
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-figcaption{
-    background-color: #c0262c;
-    padding: 7px 0;
-    color: #ffffff;
-    font-size: 1.5em; 
-}
-
-figure{
-    border: #c0262c solid thin;
-    border-radius: 35px 35px 0 0 ;
-    padding: 20px 0 0;
-    text-align: center;
-}
-
-ul li {
-    list-style-type: none;
-    list-style-image: url(/MIDIA/ossinho.png);
-    list-style-position: inside;
-    margin: 30px 0;
-}
-
-ul li a{
-    text-decoration: none;
-    color: #c0262c;
-    font-weight: bold;
-    padding: 7px;
-}
-
-ul li a:hover{
-    text-decoration: underline;
-}
-
-dt{
-    color: #fff;
-    background-color: #c0262c;
-    padding: 7px;
-}
-
-dd{
-    border: thin #c0262c solid;
-    border-radius: 0 0 25px 25px; 
-    margin-top: -3px;
-    margin-bottom: 30px;
-    padding: 20px 20px 10px;
-}
-
-dd a[target="_blank"] {
-    text-decoration: none;
-    color: #c0262c;
-    font-weight: bold;
-    padding: 7px;
-    display: inline-block;
-}
-
-dd a[target="_blank"] :hover {
-    text-decoration: underline;
-}
-
-dd a[href="#top"]{
-    text-decoration: none;
-    color: #c0262c;
-    font-weight: bold;
-    padding: 7px 0 7px 30px;
-    background:  url(/MIDIA/seta-voltar.png) no-repeat left center;
-}
-
-dd a[href="#top"] :hover{
-    text-decoration: underline;
-    background: url(/MIDIA/seta-voltar-hover.png) no-repeat left center;    
-}
-
-ol{
-    list-style: none;
-    white-space: pre;
-    line-height: .9em; 
-    /*Definir a variável de contagem*/
-    counter-reset: contador;
-}
-
-ol li:before{
-    color: #999999;
-    /*Incrementar a váriavel em 1*/
-    counter-increment: contador;
-    /*Usar o número do contador como conteúdo*/
-    content: "Questão "counter(contador)" \00BB";
+    font-family: helvetica, Arial, sans-serif;
 }
