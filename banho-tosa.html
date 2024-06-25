@@ -4,34 +4,35 @@
         <meta charset="utf-8">
         <title>Meu amigo cão</title>
         <!--<script src="/JS/html5shiv.min.js"></script>-->
+        <link rel="stylesheet" href="../CSS/style.css" type="text/css">
     </head>
 
-    <body>
-        <a href="./index.html">Home</a>
+    <body id="banhoetosa">
+        <a href="../index.html">Home</a>
         <main>
         <h1> Agendamento para banho e tosa </h1>
         <h2> Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
 
         <!--Início do formulário-->
-        <form action="./obrigado.html" method="post" id="contato">
+        <form action="../obrigado.html" method="post" id="contato">
 
             <fieldset id="ident_dono"><!--Agrupando elementos do formulário-->
                 <legend>Identificação do dono do animal</legend> <!--Legenda do agrupamento do formulário-->
 
             <!--Nome-->
-                <p><label for="nome_dono">Nome: </label><input type="text" name="nome_dono" id="nome_dono" size="50" maxlength="100" placeholder="Digite o nome completo do dono do animal"></p>
+                <p><label for="nome_dono">Nome:</label><input type="text" name="nome_dono" id="nome_dono" size="50" maxlength="100" placeholder="Digite o nome completo do dono do animal"></p>
 
             <!--Endereço-->
-                <p><label for="endereco">Endereço</label><input type="text" name="endereco" id="endereco" size="80" maxlength="60" placeholder="Digite o endereço"></p>
+                <p><label for="endereco">Endereço:</label><input type="text" name="endereco" id="endereco" size="80" maxlength="60" placeholder="Digite o endereço"></p>
 
             <!--CEP-->
-                <p><label for="cep">CEP: </label><input type="text" name="cep" id="cep" size="10" maxlength="8" placeholder="XXXXX-XXX"></p>
+                <p><label for="cep">CEP:</label><input type="text" name="cep" id="cep" size="10" maxlength="8" placeholder="XXXXX-XXX"></p>
              
             <!--E-mail-->
-                <p><label for="email_dono">E-mail: </label><input type="email" name="email_dono" id="email_dono" size="80" maxlength="60" placeholder="Digite o endereço de e-mail"></p>
+                <p><label for="email_dono">E-mail:</label><input type="email" name="email_dono" id="email_dono" size="80" maxlength="60" placeholder="Digite o endereço de e-mail"></p>
 
              <!--Telefone/Celular-->
-                <p><label for="tel_dono">Tel/Cel: </label><input type="text" name="tel_dono" id="tel_dono" size="12" maxlength="13" placeholder="(XX) 99999-9999"></p>
+                <p><label for="tel_dono">Tel/Cel:</label><input type="text" name="tel_dono" id="tel_dono" size="12" maxlength="13" placeholder="(XX) 99999-9999"></p>
 
             </fieldset>
 
@@ -39,9 +40,9 @@
             <!--Nome do animal-->
                 <p><label for="#">Nome: </label><input type="text" name="nome_animal" id="nome_animal" size="25" maxlength="40" placeholder="Nome do animal"></p>
                 <p>Porte do animal:
-                    <input type="radio" name="porte_animal" id="animal_pequeno" value="animal_pequeno" checked>Pequeno
-                    <input type="radio" name="porte_animal" id="animal_medio" value="animal_medio">Médio
-                    <input type="radio" name="porte_animal" id="animal_grande" value="animal_grande">Grande
+                    <input type="radio" name="porte_animal" id="animal_pequeno" value="animal_pequeno" checked><label for="animal_pequeno" class="labelsimples">Pequeno</label>
+                    <input type="radio" name="porte_animal" id="animal_medio" value="animal_medio"><label for="animal_medio" class="labelsimples">Médio</label>
+                    <input type="radio" name="porte_animal" id="animal_grande" value="animal_grande"><label for="animal_grande" class="labelsimples">Grande</label>
                 </p>
                 <!--Trabalhando com botões de rádio-->
                 <p>Tipo de tosa:
@@ -63,11 +64,11 @@
             <fieldset id="ident_marcacao"><legend>Horário - (Não atendemos aos domingos e às segundas-feiras)</legend>
                 <!--Caixa de seleção-->
                 <p>Indique os dias da semana de sua preferência:<br>
-                    <input type="checkbox" name="semana" value="idterca">Terça-feira
-                    <input type="checkbox" name="semana" value="idquarta">Quarta-feira
-                    <input type="checkbox" name="semana" value="idquinta">Quinta-feira
-                    <input type="checkbox" name="semana" value="idsexta">Sexta-feira
-                    <input type="checkbox" name="semana" value="idsabado">Sábado
+                    <input type="checkbox" name="semana" value="idterca" id="idterca"><label for="idterca">Terça-feira</label>
+                    <input type="checkbox" name="semana" value="idquarta" id="idquarta"><label for="idquarta">Quarta-feira</label>
+                    <input type="checkbox" name="semana" value="idquinta" id="idquint"><label for="idquint">Quinta-feira</label>
+                    <input type="checkbox" name="semana" value="idsexta" id="idsexta"><label for="idsexta">Sexta-feira</label>
+                    <input type="checkbox" name="semana" value="idsabado" id="idsabado"><label for="idsabado">Sábado</label>
                 </p>
 
                 <!--Opção de tipo de data-->
